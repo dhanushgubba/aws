@@ -1,0 +1,13 @@
+go to the console and click on services
+Go to EC2 and go to instances
+launch instance
+give the name as the machine 1
+and fill all
+click view all instances 
+again create a new instance named as the machine 2
+and fill all
+Click on view all instances
+click on the machine 1 and copy the public ipv4 addresss
+paste it in other tab
+same do it as the machine 2
+we get the welcome to aws class in bothhttps://www.linkedin.com/pulse/online-voting-system-management-gubba-venkata-naga-dhanush-3vsqc%3FtrackingId=zdgSpqzwQFOoxDYKdwhCCw%253D%253D/?trackingId=zdgSpqzwQFOoxDYKdwhCCw%3D%3D

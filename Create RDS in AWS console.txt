@@ -1,0 +1,24 @@
+Creating RDS in AWS console:
+
+* Go to the services and click the RDS.
+* Click on the create database
+* Select the Engine as the Mysql
+* In teh template Select as Freetier
+* give the database same in settings
+* give the password and give also the master password
+* In the instance go with the t2.micro (because we dont need to add the extra we only need general one)
+* In the connectivity give the same dont change anything
+* Give the public access as Yes
+* In the security groups give teh Existing VPC has launch-wizard (if we dont add configuraitons the RDS wont work remotely)
+* Scroll down in teh additonal configuration give the db name
+* Click on Create database
+* dUPLICATE IT
+* go to the security groups in ec2
+* click on the edit configurations and click on add rule and keep the Mysql/arora and give the address as 0.0.0.0/0
+* click on add rule and select teh all traffic and give the ip address as the launch-wizard-2 which we selected before.(if we select default click on default one)
+
+* Go to My sql workspace andd 
+* click on the data base we create and scroll down and copy endpoint
+* Give the connection name conn1
+  and username as admin and hostname give as teh copied endpoint address
+* give the password as adminadmin and click on ok and click on test connection and we get success

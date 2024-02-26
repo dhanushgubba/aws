@@ -1,0 +1,86 @@
+
+31-01-2023
+------------
+DATABASE SERVICES:-
+
+it is used for storing the minimum amount of data to petabyte data
+
+there are two different categories:
+1. Relational databases Eg: RDS services
+
+  RDS: 
+  Simple example is excel because data is stored in the table format with the attribute and the value
+  Services:
+  1. Amazon RDS 
+      * My SQL
+      * PostgreSql - which is mainly for developers and enterprise companies.
+      * MariaDB - compatable with mysql and high efficiency and less retrieval time.
+      * Amazon Arora - compatable with mySQL
+  
+  2. DynamoDB- it is an no sql database and it is a key-value pair (High throughput, lOwlatency, reads and writes, endless scale)
+      There are two modes : 1. Provision Mode-Every thing reads and writes of data given to user
+                            2. On-Demand Mode-Here based on the given user request the data access given
+             These are used for the Scalability.
+ 
+  3. DocumentDB - Store documents and quickly access querying on any attribute
+  4. In-memory - All programs are executed. 
+      in this we called cache as Elasti-cache(used to run the programs faster that to parallel i.e., Independently)
+      There are 2 types of Elati-cache 1. Mem Cache - it is for the number of reads and writes Eg: Google Chrome
+                                       2. Redis Cache - it is ready for storage 
+                                            1. The person who are executing the data faster with the data
+                                            2. The person who are getting the data
+  5. S3 Glacier - Data archiving and long term backup, resoter
+                  large amount of data 
+                  immediate retrieval of data is S3 Instant retrieval
+                  IF we want to store the data for long time i.e., years 
+     S3 Flexible Retrieval-IF we want to retrive data from 5- min to 12 hrs
+     S3 Deep Archiever- If we want to store the data for rarely access
+
+AWS Services Related to AI and ML:
+1. AWS SageMaker - it is used for fully managed ML Service
+2. Amazon Rekognition - It is mainly used in image processing (identify and store the data in images)
+3. Amazon Polly - Text-to-speech converter
+4. Amazon Comprehend - NLP Service (Natural Language Service)
+5. Amazon Lex - Mainly for the chatbots 
+6. AWS Athena - It is used for analyzing the S3 data 
+7. AWS Kinesis - It is used for collecting and analyzing the data which is for data screaming
+   Eg: CloudFront: it is a Content-Delivery Network (CDL)
+8. AWS Glue - It is mainly for ETL services (Extract Transfer and Load)
+
+     
+   These are used for granting the permissions using users by IAM. 
+     ACL - Access Control List
+     NACL - Network Access Control list
+   
+
+
+
+
+Applications for the Databases:
+1. ERP
+2. CRM
+3. Gaming Applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Non - Relational databases

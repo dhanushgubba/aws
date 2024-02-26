@@ -1,0 +1,25 @@
+Steps to perform the ONLINE VOTING SYSTEM
+
+1. Install the node js
+2. Install the VS Code
+3. Open CMD your working directory and then type "node --version" to check the node installation
+4. Create the client with the cmd "npx create-react-app client"
+5. Create the server with the cmd "npm init" inside the server folder which is inside the client folder
+(Open in same SDP project so what we do will lie in that Folder only
+
+SDPPROJECT -> SERVER -> Provide the CMD
+
+Client Session
+---------------
+After the creation of client
+1. In the cmd (This will start the client application)
+-> cd client
+-> npm start
+
+Server Session
+---------------
+After the creation of server (skill -> server -> package.json)
+1. Create a file called "index.js" inside the server folder
+2. Install below two packages
+   * npm install express
+   * npm install cors

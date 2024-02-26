@@ -1,0 +1,37 @@
+1. Create Client with "cmd npx create-react-app client"
+2. Create Server with "cmd npx init" inside teh server folder which is inside the skill folder
+
+Client Session - Client is a react application and the pool will get after executing 
+After the creation of client
+1. IN the cmd (this will start the client application)
+-> cd client
+-> npm start
+
+Server Session
+After the creation of server (skill -> server -> package.json-we are creating virtual environment for the server application so whatever we install in the folder those will be available in teh folder not outside i.e., globally)
+
+IN the server we are using two packages initially Install below two packages
+1. Express -> npm install express
+2. cors - cross object resource sharing -> npm install cors
+To install both at one time
+--> npm install express cors
+
+
+To run the client we use npm start
+To run the server we use node <filename>
+
+
+
+
+Client Session
+---------------
+1. modify the existing src -> App.js code to make teh logo and content as title bar
+2. Create a seperate div for body tag and bring the signup.js content from www.mui.com (paste the content in a file "Registration.js" inside the src -> components folder)
+3. import the Registration.js and call the <Registration /> under body div tag
+4. while doing this we installed packages from materail.ui packages
+cmd -> npm install @mui/material @motion/react @motion/styled
+cmd -> npm i @mui/icons-material
+5. Rerun the client to see the registration page
+
+6. Get the user entered data and display it in the same page when you click the register button.
+7. The displayed data, just send it to the server side

@@ -1,0 +1,94 @@
+Messageing Email
+-----------------
+3 types are available for user
+
+SQS: simple Queue Service
+SNS:simple Notification Service-all users get the data from one sender(person who send data is publishier)
+Subcriber:the people receiving the data
+AWS step functions: every is arranged in the order of efficiency and reliabilty
+
+Security service
+----------------
+--Identity ann Access Management(IAM):access key:username and secret access key:password which is encrypted 
+--Amazon Inspector: automated security assessment service for vulnerability
+--Amazon Macie:it is machine language service that will check the data,any personal information(phon.no)is sensitive data
+--AWS Security Hub:for consolidating the user data
+--Aws Shield: DDos=Distributed Denial of service-maily for ddos attacks
+--Amazon Guard Duty: threat detection service-they will inform you in before hand to make your data secure
+--Amazon Inspector Classic: assissment of data which checks the behaivoural of data
+--AWS Key Management Service(AWS KMS): fully managed encryption service offered by AWS
+--glue 
+
+Basic Support Tier
+----------------
+-service health checks
+-support formuce
+
+Developer Support Tier
+--------------------
+--architutre support
+--client side diagonstic tools
+
+Business Support Tier
+---------------------
+--unlimited number of IAM users
+
+Enterprise Support Tier
+-----------------------
+--enterpise on ram Support tier
+--TAM techinal account  manager
+
+TCO-Total Cost ownership
+
+
+
+AWS ACCESS
+-----------
+
+Aws Management console--that can access only password
+AWS CLI(command line interface)-can be accessed by the screte key and access key only
+Software Devlopment kit(SDK)--can be accessed only by access key
+
+Governance,risk management and complicance capabilites include
+-----------------------------------------------------------------
+--Tagging
+--Log Storage
+--Forensice
+--Service onboarding
+--Data de-identification
+--governance
+-=audit & Assessment
+--Change Management
+--Record Management
+->Tagging
+    in this we will combine how to group the elements
+->Log Storage
+    Where we will store all the data either sender or receiver
+->Forensics
+    incident and the proof
+->Service Onboarding
+    moving ur data or service from on premise to the cloud
+->Data de-Identification
+    removing the unwanted data and molistious data
+->Governance
+    compiling of all the reports 
+->Audit & Assesment
+    checking the data and providing the data
+->Change Management
+    any modifications done will be notified here
+->Records Management
+    where u will maintain record for everything which is helpful for next people
+
+
+==>Business Continuity Capabilities include
+=================================================
+->Backups
+    RPO - Record Point Objective
+->Disaster Recovery - immediate retrival of data
+    where the point of ur s3 deArchi comes into the point
+->Support
+    4 different classes
+      1)free tier - we dont have many permissions - one year plan - 24/7 support
+      2)developer - 24/7 support - they will provide limited support when we are having problem in the cloud
+      3)enterprise - which is an organisation  having the 24/7 support and 24/7 services available in the cloud and support from the AWS
+      4)business - all the support plans are available from aws and also enterprise

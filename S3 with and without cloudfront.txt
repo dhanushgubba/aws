@@ -1,0 +1,22 @@
+Creating S3 buket with and without CloufFront
+* Go to S3 in services 
+* ACL's enabled
+* bucket versioning enabled
+* click on create bucket
+* click on bucket we created
+* then click on upload and get the files from the location of pc
+* click on upload and we get the upload successful
+* Go to the actions and go to make public using ACL and select all click on make public
+* click on properties and go to static website hosting at last and enable it
+* give index document as index.html and click on save changes
+
+
+
+With CloudFront:
+* Duplicate it and go to cloudFront 
+* Go to Distribtions and create Distributions
+* give the name of what we create and go to the third as legacy and click on create new OAI 
+* go to the Web application firewall and click on donot enable the firewall and click on the create distribution
+* Copy the distribution domain name and click on it
+* It wont get to get in the link keep /index.html and enter it
+* IT will get after some time because the Ladt modified is on deploying..

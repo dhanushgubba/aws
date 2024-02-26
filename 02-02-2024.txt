@@ -1,0 +1,98 @@
+02-02-2024
+----------
+
+AWS SHADE RESPONSIBILITIES MODELS:
+
+1. Compute 
+2. Storage - S3. S3 Glacier
+3. Database - RDS,DynamoDB,Arora
+4. Networking 
+5. Infrastructure
+6. Regions
+7. Availability Zones and Edge Locations
+  In the regions we have the availability zones and in those zones we have the data centers and the nearby locations for the data centers is called as Edge locations
+8. OS Patching
+
+
+User Responsiblities:
+1. Client Side Encryption
+2. Server side encryption
+3. Platform
+4. Customer Data in the Client - The user data we take to run or migrate in the cloud (User security in the Cloud and the User Security off the cloud)
+5. Applications
+
+
+
+1. IAM 
+2. Network Traffic
+
+
+IN the AWS, maintaining the physical server is also more important
+Manage - 
+
+
+
+EC2: AWS AND CUSTOMER RESPONSIBILITY
+
+Elastic compute cloud lies under infrastructure as a service and the responsiblity model for both cloud service provider and customer is as follows:
+
+1. AWS Responsiblity
+2. Customer Responsibility
+
+
+AWS Pricing:
+------------
+dedicated host - where we rent the server, whatever we want to do (add/delete etc..) will be taken by the user 
+1.AWS lambda
+2.Amazon lightdall
+3.elastic load balancing
+
+On-Demand : when we define EC2 Instance if we want to use on day
+Reserved instances:
+Spot Instances : if we want to use immediately we will use it
+it is directly related to the direct amount we have.
+
+We have three types of costs:
+1. upfront costs : if a company wants to pay 90 percent of money usage before hand and get the huge discounts
+2. partial costs : the company want to pay only the 50 to 60 percent of money before hand and get the partial discounts (Small Company)
+3. no upfront costs: here we pay only for what we use there will be no discounts.
+
+
+* Scaling - This comes under AutoScaling
+  Expansion and Compression based on the user request the data will be increased space or decreased
+ 
+* Agility - Calculate the Performance and it is used for market.
+
+
+TCO (Total Cost of Ownership):
+* Investment in the Cloud vs physical location
+* AWS Cost Explorer - (Gives us the estimated amount for the services we want to use)
+* AWS Billing and Cost Management 
+* AWS Budgets - 
+  There are two ways
+  before doing task-- the budget will be given as estimated amount
+  after doing task -- It is called as Bill.
+* AWS Market Place -- Everything about our budget or business Strategies.
+
+AWS Trusted Advisor :
+* It Provides the real-time asisstance
+
+Data Storage Transfer:
+----------------------
+* when we use data storage transfer resources you pay on a per gigabytes basis
+* This pricing model is also known as Tiered
+1. AWS Snowball - IN this we can execute and store the petabytes amount of data it is for only for the desktop
+2. AWS Snowmobile
+3. Amazon Glacier
+4. AWS Snowball Edge
+
+Data Encryption:
+
+1. Encryption transit - Transition of data from one service to another service
+   Services we use are : SSL(Secure Socket Layer)
+                         VPN(Virtual Private Network)
+                         Load Balancers
+                         S3 and RDS
+
+2. Encryption at rest - Which happens in the data which is stored in the drives or in the system (No Movement)
+   Services we use are : S3,EBS(for the block store0,RDS and EFS(for the file store)

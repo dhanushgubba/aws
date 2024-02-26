@@ -1,0 +1,24 @@
+Lambda:
+1.Login to console and go to s3
+2. Click on Create Bucket
+3. Give the random Bucket name
+4. ACLs must be enabled
+5. Disabled all the public access and tick the acknowledgement
+6. Bucket Versioning must be enabled
+7. Scroll down and create the bucket.
+8. Duplicate the tab and go to the service called Lambda
+9. Click on create function and give function name as fun1
+10. Choose the runtime as Python 3.8
+11. Select the third one in the change default execution role
+12. Give the role name as the s3 read only and polic templates give only the s3 object read only permissions
+13. to the left we can see Add trigger click on it
+14. Select the source as S3 and select the bucket we created and acknowledge tick it 
+15. Click on Add
+16. after successfully create scroll down and select the code in it
+17. remove the code and keep the line as print("Event")
+18. Click on Deploy and it gets successfully updated the function fun1
+19. Go back to the S3 and click on it and click on add file
+20. Upload the sample2.txt file we have created and click on upload.
+21. Go back to lambda and click on the monitor
+22. click on the View CloudWatch Logs.
+23. Go to lambda and change code and deploy click on it.

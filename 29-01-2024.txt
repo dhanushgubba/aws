@@ -1,0 +1,207 @@
+there are are 4 types of clouds:
+1. public - The user can do any thing in the website
+2. private - the user has the credentials to use the data eg: IAM User like 
+3. hybrid - The combination of public and private cloud
+4. community - for the group of companies or organisations we use Eg: Enterprise- Many organisations will eb there and businness - Single company weill be theere
+
+
+
+Difference between the onpremise and cloud :
+On premise - 
+Cloud - 
+The user wants to move from the onpremise to the cloud it is called as Migration..
+
+
+Disadvantages of Maintaining all data in Physical not cloud :
+1. Cost high
+2. Difficult to maintain server
+3. Data is hack or lost we dont have the backup as effective as cloud
+
+Advantages of Maintaining all data in cloud:
+so with the help of cloud the user has the access of going smoothly
+
+
+If the data is present in some other region then we have the ability to get the data from other region..
+In India there are two data centers :
+1. Mumbai
+2. Hyderabad
+but these two are not root users they are avilabe for IAM.
+
+-----The region consisting of data centers and the location nearest data centers is called as Edge Location
+-----If we want to migrate data from one region to other is called cross region replication 
+     Eg:  for every person what we are storing in s3 so we are said to be it is storing in 6 regions so if one region dont get the data other region gets..
+
+
+IAAS :
+There is no need to maintain the data service physically so just we need to store or migrate the data onpremise into cloud.
+PAAS :
+it takes care of program execution and all our testing sites. the platform must be independent Eg: Integration service
+SAAS:
+all services or softwares like EC2 are applicable etc .. it belongs to SAAS.
+
+AMI - Amazon Machine Images (all the services in AWS are done in Linux pinus through microservices) for that we take the T2 microservices 
+Storge service : Eg: S3- SImple storage service 
+                     S3galcier -- faster retrieval of data
+                     S3 departer-- if we store the data it will remain many of time
+
+There are 6 pillars of architecture :
+.1. Operational Exellence - Moving the data from the onpremise to the cloud 
+ 2. realibility - Message is sent and recieved correctly and within the time interval
+ 3. security
+ ** scalability - Depending on user configurations scaling on done horizontally - scaling is done on the data we have or vertically- it is done on the configurations
+ 4. Performance Efficiency
+ 5. Cost optimization
+ 6. Sustaninability
+
+30-01-2023
+-----------
+
+Instances:
+--------
+Ec2(Elastic computing cloud)
+---------------------------
+-->acts as the virtual server which can be taken for rent for creating the instances
+-->we need to select AMI in that(Amazon machine images) which contain 20 operatimg systems
+   ...we select default linux
+      keypair-as our wish(but default we do not select)
+
+Types of Instances:
+-------------------
+1.Reserved instances--6 months
+2.sizing instances--talks about automatic scaling
+3.Spot Instances--which we can rent on immediately
+
+
+Migration Services:
+----------------------
+Amazon RDS:
+-----------
+-->2 types of  database
+1.relational databases
+    ex:excel workbook
+2. non relational databases
+     pattern is there but no relation between them
+     Ex:amazon DynamoDB-no sql database
+
+Amazon Aurora replicas:
+-----------------------
+which talks about IAM,caching
+    IAM-for giving access
+    caching--temporary storage is done for ceratian aamount of time
+
+Aamazon schema conversion tool:
+--------------------------------
+By using OLTP schema(Online Transactions Processing),we convert data from one database to another databse
+
+Authristation and containerisation:
+---------------------------------
+ECS-Elastic container service
+EKS-elastic kubernetis service
+
+ECR(Elastic container Registering)
+--------------------------------
+-->mainly for documenting processing
+-->acts as the user guide or the user manual
+
+EBS(Elastic block store)
+------------------------
+-->mainly for running the code in cloud without thinking for any other resources 
+-->everything will be done by aws(delete,retrieve,etc..)
+
+
+ELB(Elastic load balancing):
+----------------------------
+-->automatically balances the data which are uploaded by the user
+-->we need to monitor the health of the data which doing this
+--> It uatomatically distributes your incoming traffic across multiple targets
+-->In the status check,you can find the data is correctly accesed,executed,and no hacking done on the data(privacy)
+    ACL---Acess control list--where the user can decide for whom we need to give access or not
+
+
+VPC(virtual private cloud):
+-------------------------
+--> connecting private network interfaces together
+-->default IP address we use-->129.168.0.0./16
+
+Subnets:
+--------
+--> after creating vps we need to create subnets
+
+INternet gateway:
+------------------
+-->used for routing all ur traffic by using inbound rules and outbound rules
+     Inbound--it is for incoming traffic
+     Outbound--outgoing traffic
+--> we need to attach this Internet gateway to the vpc created
+
+Route Table:
+-------------
+--> it consists of subnet associations and all the data which need to route from one vpc to another vpc
+
+Transit Gateway:
+-----------------
+-->connecting one service to another service
+-->acts as the medium for the 2 services connected
+
+Lambda:
+-------
+--> It is a Serverless computing service
+    Managed services--which are given by aws by deafult 
+    customised services---where user can make changes as user requirement
+--> Not worrying about server management
+
+Lightsail:
+----------
+--> used for managing the VPNs(Virtual Private Network)
+--> VPNs like TurboC etc.. for security
+
+Outpost:
+--------
+--> service where we use for own dara centre computing(EC2) and storing the data(s3)
+
+Batch:
+-------
+--> It is used for scheduling and runnings the jobs(Queuing)
+
+Local Zones(Edge Locations):
+----------------------------
+--> defined as the nearest locations to the user
+Advantages:
+----------
+-->to reduce the latency(waiting time)
+-->increase the bandwidth
+
+Global Zones:
+-------------
+-->onpremise to the cloud
+--> multisharing cloud
+
+
+Wavelength:
+-----------
+--> data running in the data centres of 5G network
+--> low latency
+
+AWS APP RUNNER:
+---------------
+--> used for running your containerised service(ECS,EKS,ECR)
+   containerised --module--small appliaction which we take from large application to run it
+
+AWS Fargate:
+------------
+--> deploy and manage the containerized applications without the need to manage the infrastructure
+
+
+ADVANTAGES OF AWS:
+-----------------
+1. No data loss---AWS is ntg but the cloud,data will not be lost
+2. Automatic Scaling--depending uopn the workload no person will be to scaled the data
+3. Serverless Architectures
+4. GO globally in miutes
+5. Pay as go service model--pay for the services which u use only
+6. Agility--running your run time time executions in short span of time
+7. High Availability---services are available to the user in all the regions for 24/7
+8. Security
+
+
+
